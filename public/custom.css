@@ -291,3 +291,48 @@ strong {
 .cardbox:hover {
     background-color: #0056b3;
 } */
+
+button {
+    width: 60px;
+    height: 60px;
+    transform: scale(1);
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgb(228, 232, 236);
+    background: linear-gradient(45deg, rgb(228, 232, 236) 0%, rgb(234 234 234) 100%);
+    box-shadow: -2px -7px 10px #f1f1f1, 4px 6px 10px #d4d7da;
+    transition: all .3s;
+}
+
+button:active {
+    background: rgb(218, 221, 224);
+    background: linear-gradient(45deg, rgb(218, 221, 224) 0%, rgb(241, 241, 241) 100%);
+    box-shadow: -2px -7px 10px #d4d7da,
+        4px 6px 10px #f1f1f1,
+        inset -2px -7px 10px #f1f1f1,
+        inset 4px 6px 10px #d4d7da;
+    transition: all .3s;
+    transform: scale(.95);
+}
+
+button i {
+    font-size: 20px;
+    background: linear-gradient(-45deg, gray 0%, lightgray 100%);
+   
+    -webkit-text-fill-color: transparent;
+    transition: all .3s;
+}
+
+button:active i {
+    transform: scale(.9);
+    transition: all .3s;
+}
+
+.svg {
+    width: 25px;
+    height: 60px;
+    border-style: none;
+    align-items: center;
+}
